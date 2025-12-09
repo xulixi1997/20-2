@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鞍山市贝升网络科技有限公司 | 智慧物流引领者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#1e293b',
+                            accent: '#06b6d4', // 青色
+                            secondary: '#6366f1', // 紫色
+                            text: '#f1f5f9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #06b6d4, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-cube text-3xl text-brand-accent"></i>
+                    <span class="font-bold text-xl tracking-wider text-white">贝升科技 <span class="text-xs font-light text-gray-400 block">BEISHENG TECH</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-300 hover:text-brand-accent transition">首页</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand-accent transition">核心服务</a>
+                    <a href="#tech" class="text-gray-300 hover:text-brand-accent transition">智慧系统</a>
+                    <a href="#cases" class="text-gray-300 hover:text-brand-accent transition">解决方案</a>
+                    <a href="#news" class="text-gray-300 hover:text-brand-accent transition">资讯中心</a>
+                    <a href="#contact" class="px-5 py-2 rounded-full bg-gradient-to-r from-brand-accent to-brand-secondary text-white font-medium hover:opacity-90 transition shadow-lg shadow-cyan-500/30">立即咨询</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-brand-accent focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center hero-bg">
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <div class="inline-block px-4 py-1 mb-6 border border-brand-accent rounded-full bg-brand-accent/10 backdrop-blur-sm">
+                <span class="text-brand-accent text-sm font-semibold tracking-wide">赋能辽宁 · 连接世界</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                数据驱动的 <br>
+                <span class="text-gradient">智慧物流新生态</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto font-light">
+                鞍山市贝升网络科技有限公司致力于通过 AI 算法与物联网技术，重塑供应链效率。从立山出发，精准触达全球每一个角落。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="px-8 py-4 bg-white text-brand-dark font-bold rounded-lg hover:bg-gray-100 transition shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                    探索服务
+                </a>
+                <a href="#contact" class="px-8 py-4 border border-white/30 text-white font-bold rounded-lg hover:bg-white/10 transition backdrop-blur-md">
+                    联系我们
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 w-full flex justify-center animate-bounce">
+            <i class="fa-solid fa-chevron-down text-white/50 text-2xl"></i>
+        </div>
+    </section>
+
+    <section class="py-12 bg-brand-light border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-4xl font-bold text-brand-accent mb-2">99.8%</h3>
+                <p class="text-gray-400 text-sm">准时送达率</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-brand-secondary mb-2">300+</h3>
+                <p class="text-gray-400 text-sm">合作企业伙伴</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-white mb-2">24/7</h3>
+                <p class="text-gray-400 text-sm">智能监控响应</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-teal-400 mb-2">15W+</h3>
+                <p class="text-gray-400 text-sm">年处理订单量</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-brand-accent to-brand-secondary rounded-xl opacity-30 blur-lg"></div>
+                <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=800" alt="About Team" class="relative rounded-xl shadow-2xl border border-gray-700 w-full object-cover h-[400px]">
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">扎根鞍山，<span class="text-brand-accent">智运未来</span></h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    鞍山市贝升网络科技有限公司成立于数字化浪潮之中，坐落于辽宁省鞍山市立山区太平街。我们不仅仅是一家物流公司，更是一家网络科技公司。
+                </p>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    通过自研的物流管理系统（LMS）和大数据分析平台，我们为客户提供从仓储管理、运输调度到最后一公里配送的全链路可视化解决方案，极大地降低了企业物流成本，提升了周转效率。
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-check-circle text-brand-accent"></i> 本地化深耕与全球视野结合
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-check-circle text-brand-accent"></i> 专业的网络技术研发团队
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-check-circle text-brand-accent"></i> 灵活可定制的供应链方案
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-brand-light relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-brand-secondary font-bold tracking-wider uppercase text-sm">Our Expertise</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">全链路物流服务体系</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-brand-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent transition">
+                        <i class="fa-solid fa-truck-fast text-2xl text-brand-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">干线精准运输</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">提供覆盖全国的整车及零担运输服务，依托智能调度系统，实现路径最优规划，确保货物准时安全送达。</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-brand-secondary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-secondary transition">
+                        <i class="fa-solid fa-warehouse text-2xl text-brand-secondary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">智能云仓储</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">位于鞍山的标准化仓库，配备自动化分拣设备。支持库存实时同步、SKU精细化管理及一件代发服务。</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-500 transition">
+                        <i class="fa-solid fa-globe text-2xl text-purple-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">跨境电商物流</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">一站式跨境解决方案，涵盖报关清关、海外仓中转及国际小包专线，助力中国制造出海。</p>
+                </div>
+                
+                 <div class="glass-card p-8 rounded-2xl hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-500 transition">
+                        <i class="fa-solid fa-temperature-arrow-down text-2xl text-orange-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">冷链温控运输</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">针对生鲜、医药等特殊货物，提供全程温控记录与监控，确保冷链不断链，品质不打折。</p>
+                </div>
+
+                 <div class="glass-card p-8 rounded-2xl hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-green-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-500 transition">
+                        <i class="fa-solid fa-boxes-packing text-2xl text-green-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">供应链金融</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">依托真实的物流数据，为中小微企业提供基于货权的融资服务，解决资金周转难题。</p>
+                </div>
+
+                 <div class="glass-card p-8 rounded-2xl hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-pink-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-pink-500 transition">
+                        <i class="fa-solid fa-laptop-code text-2xl text-pink-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">物流软件定制</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">不仅提供物流服务，更为同行提供TMS、WMS系统开发与部署，实现行业技术赋能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="py-20 bg-brand-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=800" alt="IoT" class="rounded-2xl shadow-lg border border-gray-700 opacity-90 hover:opacity-100 transition">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="text-brand-accent font-bold mb-2">INTELLIGENT TRACKING</div>
+                    <h3 class="text-3xl font-bold mb-4">IoT 物联网实时追踪</h3>
+                    <p class="text-gray-400 mb-6">我们为每一件货物赋予数字ID。通过车载GPS、RFID标签与温湿度传感器，您可以随时通过贝升云平台查看货物的精确位置与状态。</p>
+                    <a href="#" class="text-white border-b border-brand-accent pb-1 hover:text-brand-accent transition">了解技术细节 &rarr;</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Algorithm" class="rounded-2xl shadow-lg border border-gray-700 opacity-90 hover:opacity-100 transition">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="text-brand-secondary font-bold mb-2">BIG DATA ANALYSIS</div>
+                    <h3 class="text-3xl font-bold mb-4">AI 智能路由算法</h3>
+                    <p class="text-gray-400 mb-6">告别经验主义。我们的系统基于历史数据与实时路况，自动计算最优配送路径与车辆装载方案，将空驶率降低30%以上。</p>
+                    <a href="#" class="text-white border-b border-brand-secondary pb-1 hover:text-brand-secondary transition">查看算法演示 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-16">四步开启 <span class="text-brand-accent">极速物流体验</span></h2>
+            <div class="grid md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-700 -z-0"></div>
+
+                <div class="relative z-10 bg-brand-light p-4">
+                    <div class="w-24 h-24 mx-auto bg-gray-800 rounded-full border-4 border-brand-accent flex items-center justify-center mb-6 shadow-lg shadow-cyan-900/50">
+                        <span class="text-3xl font-bold text-white">01</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">在线下单/咨询</h4>
+                    <p class="text-gray-400 text-sm">通过网站、电话或API接口提交您的物流需求。</p>
+                </div>
+
+                <div class="relative z-10 bg-brand-light p-4">
+                    <div class="w-24 h-24 mx-auto bg-gray-800 rounded-full border-4 border-gray-700 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-gray-500">02</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">智能调度揽收</h4>
+                    <p class="text-gray-400 text-sm">系统自动匹配最近运力，极速上门揽件。</p>
+                </div>
+
+                <div class="relative z-10 bg-brand-light p-4">
+                    <div class="w-24 h-24 mx-auto bg-gray-800 rounded-full border-4 border-gray-700 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-gray-500">03</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">全程可视化运输</h4>
+                    <p class="text-gray-400 text-sm">节点扫描，实时更新，随时随地掌握轨迹。</p>
+                </div>
+
+                <div class="relative z-10 bg-brand-light p-4">
+                    <div class="w-24 h-24 mx-auto bg-gray-800 rounded-full border-4 border-brand-secondary flex items-center justify-center mb-6 shadow-lg shadow-indigo-900/50">
+                        <span class="text-3xl font-bold text-white">04</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">精准签收反馈</h4>
+                    <p class="text-gray-400 text-sm">电子回单即时上传，服务评价闭环。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">行业定制解决方案</h2>
+                <p class="text-gray-400 mt-4">我们深知不同行业的痛点，为您量身打造。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="group relative overflow-hidden rounded-xl h-64 cursor-pointer">
+                    <img src="https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">汽车配件</h3>
+                        <p class="text-sm text-gray-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300">准时化(JIT)配送，配合产线节奏。</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl h-64 cursor-pointer">
+                    <img src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">医药健康</h3>
+                        <p class="text-sm text-gray-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300">GSP认证标准，精准温控。</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl h-64 cursor-pointer">
+                    <img src="https://images.pexels.com/photos/5025669/pexels-photo-5025669.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">电子产品</h3>
+                        <p class="text-sm text-gray-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300">高价值货物安保，防震防潮。</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl h-64 cursor-pointer">
+                    <img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-110 opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">快消零售</h3>
+                        <p class="text-sm text-gray-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300">应对波峰波谷，灵活弹性仓储。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/3">
+                <h2 class="text-3xl font-bold mb-6">不仅是运输，<br>更是信任的托付</h2>
+                <p class="text-gray-400 mb-6">贝升科技凭借多年的行业经验与技术积累，为客户提供超越预期的服务体验。我们在辽宁省内拥有绝对的资源优势。</p>
+                <div class="p-6 bg-brand-dark rounded-xl border border-gray-700">
+                    <div class="text-4xl font-bold text-brand-accent mb-2">100%</div>
+                    <div class="text-gray-400">货物保险全覆盖</div>
+                </div>
+            </div>
+            <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-brand-secondary">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">安全保障</h4>
+                        <p class="text-gray-400 text-sm">严格的司机筛选机制，全程GPS监控，异常情况24小时预警。</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-brand-secondary">
+                        <i class="fa-solid fa-bolt text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">时效承诺</h4>
+                        <p class="text-gray-400 text-sm">超时赔付机制，让您的商业计划不再因物流延误而受阻。</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-brand-secondary">
+                        <i class="fa-solid fa-coins text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">成本透明</h4>
+                        <p class="text-gray-400 text-sm">一口价模式，无隐形消费，详细的账单报表让财务对账更轻松。</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-brand-secondary">
+                        <i class="fa-solid fa-headset text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">专属客服</h4>
+                        <p class="text-gray-400 text-sm">1对1项目经理负责制，任何问题，只需一个电话。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-dark text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">立足鞍山，辐射全国</h2>
+            <p class="text-gray-400 mb-12">以鞍山为核心枢纽，我们在沈阳、大连设有分拨中心，干线网络覆盖全国30+个省市自治区。</p>
+            <div class="relative w-full h-[400px] bg-[#1e293b] rounded-2xl overflow-hidden border border-gray-700 flex items-center justify-center">
+                <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-luminosity">
+                <div class="relative z-10">
+                    <div class="animate-pulse absolute -top-12 -left-20 w-4 h-4 bg-brand-accent rounded-full"></div>
+                    <div class="animate-pulse absolute top-10 right-10 w-3 h-3 bg-brand-secondary rounded-full"></div>
+                    <i class="fa-solid fa-map-location-dot text-6xl text-brand-accent/80 drop-shadow-[0_0_15px_rgba(6,182,212,0.8)]"></i>
+                    <p class="mt-4 font-mono text-brand-accent">ANSHAN HUB ACTIVE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-10">
+                <h2 class="text-3xl font-bold">基础设施 & 车队</h2>
+                <a href="#" class="text-brand-accent hover:text-white transition">查看更多 <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-96">
+                <div class="col-span-2 row-span-2 relative rounded-xl overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 left-0 bg-black/60 px-4 py-2 text-white text-sm">重型货柜车队</div>
+                </div>
+                <div class="relative rounded-xl overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="relative rounded-xl overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="col-span-2 relative rounded-xl overflow-hidden group">
+                    <img src="https://images.pexels.com/photos/1797427/pexels-photo-1797427.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 left-0 bg-black/60 px-4 py-2 text-white text-sm">标准化立体仓库</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">客户怎么说</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-700 absolute top-6 left-6 -z-10"></i>
+                    <p class="text-gray-300 italic mb-6">"与贝升科技合作两年了，他们的TMS系统让我们的订单处理效率提升了40%，而且鞍山本地的响应速度非常快。"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-full border-2 border-brand-accent">
+                        <div>
+                            <h5 class="font-bold text-white">张经理</h5>
+                            <p class="text-xs text-gray-500">某大型制造企业 物流总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-2xl relative border-brand-accent/30">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-700 absolute top-6 left-6 -z-10"></i>
+                    <p class="text-gray-300 italic mb-6">"冷链运输一直是我们最头疼的问题，直到遇到贝升。他们的全程温控数据非常透明，让我们很放心。"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full border-2 border-brand-accent">
+                        <div>
+                            <h5 class="font-bold text-white">李女士</h5>
+                            <p class="text-xs text-gray-500">连锁生鲜超市 采购经理</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-gray-700 absolute top-6 left-6 -z-10"></i>
+                    <p class="text-gray-300 italic mb-6">"服务态度好，价格公道。特别是从鞍山发往南方的专线，时效比以前找的物流公司都要稳。"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" class="w-12 h-12 rounded-full border-2 border-brand-accent">
+                        <div>
+                            <h5 class="font-bold text-white">王总</h5>
+                            <p class="text-xs text-gray-500">跨境电商卖家</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-brand-light border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm text-gray-500 mb-6 uppercase tracking-widest">Trusted By Leaders</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <i class="fa-brands fa-amazon text-5xl hover:text-white transition"></i>
+                <i class="fa-brands fa-dhl text-5xl hover:text-white transition"></i>
+                <i class="fa-brands fa-fedex text-5xl hover:text-white transition"></i>
+                <i class="fa-brands fa-shopify text-5xl hover:text-white transition"></i>
+                <i class="fa-brands fa-alibaba text-5xl hover:text-white transition"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-dark">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">常见问题解答</h2>
+            <div class="space-y-4">
+                <details class="group bg-brand-light rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium list-none text-lg">
+                        <span>如何查询我的货物位置？</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed">您可以直接在官网顶部的“运单查询”入口输入单号，或者关注我们的微信公众号，绑定手机号后即可实时接收节点推送。</p>
+                </details>
+                <details class="group bg-brand-light rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium list-none text-lg">
+                        <span>大宗货物运输是否有价格优惠？</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed">是的，针对月发货量超过50吨或长期签约的企业客户，我们提供阶梯式报价和专属的大客户折扣协议。</p>
+                </details>
+                <details class="group bg-brand-light rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium list-none text-lg">
+                        <span>货物如果在运输中损坏怎么办？</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed">贝升科技承诺100%保险覆盖。一旦发生货损，请在签收时拍照留证并联系客服，我们将启动极速理赔流程，通常在3个工作日内完成赔付。</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">行业洞察 & 公司动态</h2>
+                <a href="#" class="text-sm text-gray-400 hover:text-white">查看全部</a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-brand-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-cyan-900/20 transition duration-300">
+                    <img src="https://images.pexels.com/photos/6169033/pexels-photo-6169033.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-brand-accent text-xs font-bold uppercase">公司新闻</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-white hover:text-brand-accent transition">贝升科技完成新一轮智慧仓储升级</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">为了应对即将到来的双十一物流高峰，鞍山分拨中心引入了最新的AGV搬运机器人...</p>
+                        <div class="mt-4 text-xs text-gray-500">2023年10月15日</div>
+                    </div>
+                </article>
+                <article class="bg-brand-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-cyan-900/20 transition duration-300">
+                    <img src="https://images.pexels.com/photos/5025638/pexels-photo-5025638.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-brand-secondary text-xs font-bold uppercase">行业深度</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-white hover:text-brand-accent transition">数字化转型：物流企业的必经之路</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">随着油价波动和人力成本上升，如何通过数据驱动降本增效成为物流行业的热点话题...</p>
+                        <div class="mt-4 text-xs text-gray-500">2023年09月28日</div>
+                    </div>
+                </article>
+                <article class="bg-brand-dark rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-cyan-900/20 transition duration-300">
+                    <img src="https://images.pexels.com/photos/4484155/pexels-photo-4484155.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-brand-accent text-xs font-bold uppercase">政策解读</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3 text-white hover:text-brand-accent transition">辽宁省出台新物流扶持政策</h3>
+                        <p class="text-gray-400 text-sm line-clamp-2">政府加大对智能物流园区的补贴力度，贝升科技作为重点企业将积极响应...</p>
+                        <div class="mt-4 text-xs text-gray-500">2023年09月10日</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-brand-accent to-brand-secondary text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">加入我们，共建智慧物流网络</h2>
+            <p class="mb-8 opacity-90">我们在寻找充满激情的开发工程师、物流规划师和市场专员。</p>
+            <a href="#" class="inline-block px-8 py-3 bg-white text-brand-secondary font-bold rounded-full hover:shadow-lg transition transform hover:-translate-y-1">查看在招职位</a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-brand-dark relative">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">联系我们</h2>
+                <p class="text-gray-400 mb-10">无论您有物流需求还是技术合作意向，欢迎随时与我们联系。</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-brand-accent">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold">公司地址</h5>
+                            <p class="text-gray-400 text-sm">辽宁省鞍山市立山区太平街2栋1-2层S4号</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-brand-accent">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold">电子邮箱</h5>
+                            <p class="text-gray-400 text-sm">dev@anshanbeisheng.asia</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-brand-accent">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold">联系电话</h5>
+                            <p class="text-gray-400 text-sm">13073866077</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-brand-accent flex items-center justify-center text-white transition"><i class="fa-brands fa-weixin"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-brand-secondary flex items-center justify-center text-white transition"><i class="fa-brands fa-weibo"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-brand-light p-8 rounded-2xl border border-gray-700 shadow-xl">
+                <form onsubmit="event.preventDefault(); alert('感谢您的留言，我们会尽快联系您！');">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-gray-400 text-xs mb-2">姓名</label>
+                            <input type="text" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent" placeholder="您的称呼">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-xs mb-2">电话</label>
+                            <input type="tel" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent" placeholder="联系电话">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-400 text-xs mb-2">邮箱</label>
+                        <input type="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-400 text-xs mb-2">需求描述</label>
+                        <textarea rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent" placeholder="请简要描述您的物流需求..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-accent hover:bg-cyan-600 text-white font-bold py-3 rounded-lg transition shadow-lg shadow-cyan-500/20">
+                        发送信息
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0b1120] pt-16 pb-8 border-t border-gray-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-cube text-2xl text-brand-accent"></i>
+                        <span class="font-bold text-lg text-white">贝升科技</span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed">
+                        专注智慧物流与供应链管理，以技术驱动行业变革，为企业提供高效、安全、可视化的物流解决方案。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a href="#" class="hover:text-brand-accent transition">关于我们</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition">核心服务</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition">技术支持</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition">加入我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">服务支持</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a href="#" class="hover:text-brand-accent transition">运单查询</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition">帮助中心</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition">隐私政策</a></li>
+                        <li><a href="#" class="hover:text-brand-accent transition">服务条款</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">订阅动态</h4>
+                    <p class="text-gray-500 mb-4">获取最新的物流资讯与优惠信息。</p>
+                    <div class="flex">
+                        <input type="email" placeholder="您的邮箱" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none w-full">
+                        <button class="bg-brand-accent px-4 py-2 rounded-r-lg text-white hover:bg-cyan-600 transition">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600">© 2023 鞍山市贝升网络科技有限公司 版权所有.</p>
+                <p class="text-gray-600 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> 系统运行正常
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section > div').forEach(el => {
+                el.classList.add('transition', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
